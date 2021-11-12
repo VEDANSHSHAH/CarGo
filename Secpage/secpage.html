@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<head>
+  <title>Car Go</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="secscript.css">
+  <link rel="icon" href="../Images/tablogo.jpeg">
+</head>
+
+<body>
+  <div class="header">
+    <abbr title="CAR GO">
+      <h4 class="font1 tdtext1" style="color:orange;text-align: left;font-size:90px;font-style:italic">Car Go</h4>
+    </abbr>
+  </div>
+  <div style="padding-left:30px">
+  </div>
+  <div id="boxes">
+    <div id="leftbox">
+      <p style="margin-left:20px;"><abbr title="Go to Home"><a href="../index.html" style="text-decoration: none;"><span
+              class="backbtn"> &#9664;</span></a> </abbr></p>
+      <div class="container font1 " style="border-width: 5px;">
+        <p style="text-align: center; font-size:50px;" class="font2 tdtext1"></p>
+        <div class="transparentbox">
+          <p style="font-weight:bolder;font-size: 30px;color: rgb(18, 175, 136);">Explore Cars</p>
+          <!-- <div style="margin-left: 20px;color:rgb(255, 255, 255);">Description and Welcome texts</div> -->
+          <p style="">
+            <input id="chkB" type="radio" class="brb" name="field" value="BCar" onclick="ShowHideDiv()"><a
+              style="color: rgb(24, 83, 83);">Budget Cars</a></input><br><br>
+            <input id="chkP" type="radio" class="brb" name="field" value="PCar" onclick="ShowHideDiv1()"><a
+              style="color: rgb(24, 83, 83)">Performance + Comfort </a></input><br><br>
+            <input id="chkBr" type="radio" class="brb" name="field" value="BrCar" onclick="ShowHideDiv2()"><a
+              style="color: rgb(24, 83, 83)">Brands</a></input><br>
+              
+          </p>
+         <p><a  style="color: rgb(2, 128, 23);font-size: 30px;" class="font1">Feedback</a> 
+        <br><br><a style="color: aqua;">&#8226;</a><a href="../Feedbackpage/Feedback.html" target="_blank" style="color: rgb(35, 184, 189);font-size: 25px;" class="font1">Link</a></p> 
+        </div>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       
+        <br>
+        <br>
+      </div>
+    </div>
+
+    <div id="rightbox" >
+      <div id="myDIV">
+
+        <div id="default" style="background: url(../Images/default.jpg);"><br>
+          <p class="font1" style="font-size:50px;margin-left: 50px;margin-top:1px;font-weight: bolder;">Welcome To <a
+            style="font-size:50px;color: rgb(27, 80, 2);font-weight: bolder;"> CARGO</a></p>
+            <p class="font1"><a style="margin-left:30px;">Select any of three options of your choice to get details about Cars!</a></p>
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        </div>
+
+      <div id="BCars" style="display: none;">
+        <br>
+        <p class="font1" style="font-size:30px;margin-left: 50px;margin-top:1px;font-weight: bolder;">Looking for <a
+            style="color: rgb(27, 80, 2);">Budget Cars</a></p>
+        <p style="margin-left: 50px;" class="font1">Cars price are in range from 4,00,000 (four lakh) INR to 9,00,000
+          (nine lakh) INR</p>
+        <table id="displayresult" class="tg font1 gredient" style="color:white; margin-left: 50px; margin-top: 50px;">
+          <thead>
+            <tr style="color:black;">
+              <th class="tg-0pky">Sr. No</th>
+              <th class="tg-0pky"><a style="color: rgb(2, 131, 131);">Brand(link)</a></th>
+              <td class="tg-0pky" style="color:rgb(29, 115, 150)">Transmission</td>
+              <th class="tg-0pky">Fuel Type </th>
+              <th class="tg-0pky">Mileage (Upto)</th>
+              <th class="tg-0pky">Engine (Upto)</th>
+            </tr>
+          </thead>
+          <tbody class="bold" style="text-decoration: none;color:black;">
+            <tr>
+              <td class="tg-0pky">1</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://cars.tatamotors.com/cars/altroz?utm_source=Brand_Search_Awareness&utm_medium=cpc&utm_campaign=TML_Altroz&utm_term=2un-774L&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtVVXTN8iJKXHPdrheSpiVWEpcIb-1eCCtSggY6GZ8kO8QDKFBUUUhhoCJjsQAvD_BwE">
+                  TATA ALTROZ</a>
+              </td>
+              <td class="tg-0pky">Manual</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">25.11kmpl</td>
+              <td class="tg-0pky">1199-1956cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">2</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://cars.tatamotors.com/suv/punch?utm_source=Google_Brand_Search&utm_medium=cpc&utm_campaign=tata_punch_Brand_Search&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtenknuEJ4I8sNKN7gxRpP3yFbbrWjpDfGPmYI47KuJU1lgQ7GkwndRoCAboQAvD_BwE">
+                  TATA Punch</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol</td>
+              <td class="tg-0pky">-</td>
+              <td class="tg-0pky">1199cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">3</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://www.kia.com/in/our-vehicles/sonet/showroom.html?utm_source=google&utm_medium=sem&utm_campaign=sonet_brand&gclid=CjwKCAjwq9mLBhB2EiwAuYdMta0vv8hv6ElR-6LDAN79OYJZ2nv3lrghbP7FXliZZ_Gqac6wC8RfrxoC9m4QAvD_BwE">
+                  KIA Sonet</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">24.1kmpl</td>
+              <td class="tg-0pky">998-1498cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">4</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);" href="https://auto.mahindra.com/suv/xuv300">
+                  Mahindra XUV 300</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">20kmpl</td>
+              <td class="tg-0pky">1197-1497cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">5</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://www.marutisuzuki.com/swift?form=testdrive&utm_source=google&utm_medium=cpc&utm_campaign=13868647135&utm_term=maruti%20suzuki%20swift&utm_content=c&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtf6E7wqQjqcoQvSTWg-1lzk4sbQYlfXfWIFN-2tJyMdxnFkaiSb3MRoClhkQAvD_BwE">
+                  Maruti Suzuki Swift</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol</td>
+              <td class="tg-0pky">23.76kmpl</td>
+              <td class="tg-0pky">1197-1248cc</td>
+            </tr>
+          </tbody>
+        </table>
+
+      </div>
+
+      <div id="PCars" style="display: none">
+        <br>
+        <p class="font1" style="font-size:30px;margin-left: 50px;margin-top:1px;font-weight: bolder;">Looking for <a
+            style="color: rgb(29, 85, 3);">Performance Cars</a></p>
+        <p style="margin-left: 50px;" class="font1">Cars price are above 9,00,000 (nine lakh) INR</p>
+        <table id="displayresult" class="tg font1 gredient" style="color:white; margin-left: 50px; margin-top: 50px;">
+          <thead>
+            <tr style="color:black;">
+              <th class="tg-0pky">Sr. No</th>
+              <th class="tg-0pky"><a style="color: rgb(2, 131, 131);">Brand(link)</a></th>
+              <td class="tg-0pky" style="color:rgb(29, 115, 150)">Transmission</td>
+              <th class="tg-0pky">Fuel Type </th>
+              <th class="tg-0pky">Mileage (Upto)</th>
+              <th class="tg-0pky">Engine (Upto)</th>
+            </tr>
+          </thead>
+          <tbody class="bold" style="text-decoration: none;color:black;">
+            <tr>
+              <td class="tg-0pky">1</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://www.hondacarindia.com/all-new-honda-city">
+                  HONDA City</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">24.41kmpl</td>
+              <td class="tg-0pky">1498cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">2</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);" href="https://cars.tatamotors.com/suv/harrier">
+                  TATA Harrier</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Diesel</td>
+              <td class="tg-0pky">17kmpl</td>
+              <td class="tg-0pky">1956cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">3</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);" href="https://auto.mahindra.com/suv/thar">
+                  Mahindra Thar</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">15.2kmpl</td>
+              <td class="tg-0pky">1997-2498cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">4</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://www.hyundai.com/in/en/buy-a-car/request-a-test-drive?utm_source=Search-Perf&utm_medium=CPL&utm_campaign=CRETA-AlwaysOn-2021&id=CRETA&prod=new-creta&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtfIHATBLLrZXa4yqN9ak71hkLq4dYm7CPFO6DsFnGeB6Z7OjwUyeqRoCK5cQAvD_BwE">
+                  Hyundai Creta</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">21.4kmpl</td>
+              <td class="tg-0pky">1353-1497cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">5</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://www.hyundai.com/in/en/buy-a-car/request-a-test-drive?utm_source=Search-Perf&utm_medium=CPL&utm_campaign=VERNA-AlwaysOn-2021&id=VERNA&prod=new-verna&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtW6KG7xMyLhkfcy7CDn_xohvq_DW6yXY4um-onn4yb4EIroFwbUvaRoCKkQQAvD_BwE">
+                  Hyundai Verna</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">25kmpl</td>
+              <td class="tg-0pky">998-1497cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">6</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);"
+                  href="https://www.nexaexperience.com/ciaz?utm_form_type=Test-Drive&utm_source=google&utm_medium=cpc&utm_campaign=13753288998&utm_term=maruti%20suzuki%20ciaz&utm_content=c&gclid=CjwKCAjwq9mLBhB2EiwAuYdMtdEXzMFrySTCr9M8XlPZ1WqW-SLQp8nmcGtmzwGBoAZGvxVVvWUAjhoCcgAQAvD_BwE">
+                  Maruti Suzuki Ciaz</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol</td>
+              <td class="tg-0pky">21.56kmpl</td>
+              <td class="tg-0pky">1248-1498cc</td>
+            </tr>
+            <tr>
+              <td class="tg-0pky">7</td>
+              <td class="tg-0pky">
+                <a style="text-decoration: none;color:rgb(139, 79, 0);" href="https://auto.mahindra.com/suv/xuv700/">
+                  Mahindra XUV 700</a>
+              </td>
+              <td class="tg-0pky">Manual/Automatic</td>
+              <td class="tg-0pky">Petrol/Diesel</td>
+              <td class="tg-0pky">-</td>
+              <td class="tg-0pky">1997-2184cc</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div id="BrCars" style="display: none;background: url(../Images/);">
+        <br>
+        <p class="font1" style="font-size:30px;margin-left: 50px;margin-top:1px;font-weight: bolder;">Looking for <a
+          style="color: rgb(35, 105, 2);">Luxury Cars</a></p>
+        <a  class="font1" style="font-size:80px;margin-left:20px;color:rgb(0, 163, 228);" href="https://www.googleadservices.com/pagead/aclk?sa=L&ai=DChcSEwjQ2pDElZD0AhVtmGYCHdAeBzYYABAAGgJzbQ&ae=2&ohost=www.google.com&cid=CAESP-D2hUCQ3IdCSM5h_NR42sRSfWFPUr6MPhVhLYj8OPEuxBcbmAWWnOVjreOwm8APREUQT99HrtFzhRECmydrkw&sig=AOD64_2B-3zDlqiGvtfy2usCC8Z8-WH9cg&q&adurl&ved=2ahUKEwjdp4HElZD0AhWtzzgGHeNWAiMQ0Qx6BAgCEAE">
+          Mercedes
+        </a>
+        <br>
+        <a class="font1" style="font-size:80px;margin-left:20px;color:rgb(2, 119, 165);" href="https://www.audi.com/en.html">
+          AUDI
+        </a>
+        <br>
+        <a  class="font1" style="font-size:80px;margin-left:20px;color:rgb(2, 89, 124);" href="https://www.bentleymotors.com/en.html">
+          Bentley
+          <br>
+        <a  class="font1" style="font-size:80px;margin-left:20px;color:rgb(1, 42, 58);" href="https://www.porsche.com/middle-east/_india_/">
+          Porsche
+          <br>
+        </a>
+        <br>
+        <a  class="font1" style="font-size:80px;margin-left:20px;color:rgb(0, 17, 24);" href="https://www.bmw.in/en/index.html">
+          BMW
+          </a>
+          <br>
+        
+      </div>
+    </div>
+      <div id="firstpair">
+        <nev style="padding: 0px; margin: 0px;">
+
+      </div>
+
+      <div id="secondpair">
+        <nev style="padding: 0px; margin: 0px;">
+
+      </div>
+    </div>
+    <div style="background: url(../Images/linksback.jpg);background-size: 2000px 455px;">
+      <div class="vertical-menu font1">
+        <p class="font2" style="font-style: italic;font-weight: bold;">
+          &#128279; Quick Links:
+        </p>
+        <a href="https://www.wikiwand.com/en/Car" target="_blank">&#183; Learn about Cars.</a>
+        <a href="https://www.bankbazaar.com/car-loan/types-of-cars.html" target="_blank">&#183; What are different types
+          of Cars?</a>
+        <a href="https://www.audi.in/in/web/en.html" target="_blank">&#183; Audi</a>
+        <a href="https://www.toyotabharat.com/" target="_blank"> &#183; Toyota</a>
+        <a href="https://www.tatamotors.com/" target="_blank">&#183; TATA</a>
+      </div>
+    </div>
+    <footer style="color:white;" class="clearfix">
+      <adress class="font1">(office address)<br>Write an email us at <a href="mailto:abc@xyz.com"
+          style="color:sandybrown; text-decoration: none;">Email</a><br>
+        In case of any help please contact during (time slot) <i class="material-iconz">&#xe551;</i>
+        <a href="tel:" class="font1" target="_blank" style="color:sandybrown">Call (sample number)</a><br>Copyright
+        &copy; 2021,CarGo</address>
+    </footer>
+</body>
+<script src="secjs.js"></script>
+
+</html>
